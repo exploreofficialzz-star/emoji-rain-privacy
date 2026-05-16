@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Emoji Rain</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #08081A;
+      color: #E8E8F0;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0D0D2B 0%, #12122A 100%);
+      border-bottom: 1px solid #1E1E35;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    .header .icon {
+      font-size: 56px;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #FFD700, #FF8C00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .header .subtitle {
+      color: #78909C;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .header .badge {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 6px 16px;
+      background: rgba(255, 215, 0, 0.1);
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      border-radius: 20px;
+      font-size: 12px;
+      color: #FFD700;
+      font-weight: 600;
+    }
+
+    /* ── Content ── */
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Section ── */
+    .section {
+      background: #12122A;
+      border: 1px solid #1E1E35;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .section h2 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #FFD700;
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2 .num {
+      width: 28px;
+      height: 28px;
+      background: rgba(255, 215, 0, 0.15);
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 900;
+      color: #FFD700;
+      flex-shrink: 0;
+    }
+
+    .section p {
+      color: #B0BEC5;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .section ul li {
+      color: #B0BEC5;
+      font-size: 14px;
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .section ul li:last-child { border-bottom: none; }
+
+    .section ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #FFD700;
+      font-size: 12px;
+    }
+
+    .highlight {
+      background: rgba(0, 230, 118, 0.08);
+      border: 1px solid rgba(0, 230, 118, 0.25);
+      border-radius: 10px;
+      padding: 14px 18px;
+      color: #00E676;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .highlight::before {
+      content: '✅  ';
+    }
+
+    .warning-box {
+      background: rgba(255, 215, 0, 0.06);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      border-radius: 10px;
+      padding: 14px 18px;
+      color: #FFD700;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    /* ── Third party table ── */
+    .third-party {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .third-party th {
+      text-align: left;
+      padding: 10px 14px;
+      background: rgba(255,215,0,0.06);
+      color: #FFD700;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .third-party td {
+      padding: 10px 14px;
+      color: #B0BEC5;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      vertical-align: top;
+    }
+
+    .third-party tr:last-child td { border-bottom: none; }
+
+    .third-party a {
+      color: #00E5FF;
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: linear-gradient(135deg, rgba(255,215,0,0.08), rgba(255,140,0,0.05));
+      border: 1px solid rgba(255,215,0,0.3);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    .contact-card h3 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #FFD700;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p { color: #78909C; font-size: 13px; margin-bottom: 16px; }
+
+    .contact-card a {
+      display: inline-block;
+      padding: 12px 28px;
+      background: linear-gradient(135deg, #FFD700, #FF8C00);
+      border-radius: 12px;
+      color: #000;
+      font-weight: 800;
+      font-size: 14px;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: #2A2A45;
+      font-size: 12px;
+      border-top: 1px solid #1E1E35;
+    }
+
+    .footer span { color: #4A4A70; }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 24px; }
+      .section { padding: 20px; }
+      .third-party { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <span class="icon">🎮</span>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Emoji Rain: Focus or Fail &nbsp;·&nbsp; by ChAs Tech Group</p>
+    <span class="badge">Last updated: May 2026</span>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- Intro -->
+    <div class="section">
+      <h2><span class="num">01</span> Overview</h2>
+      <div class="highlight">
+        Emoji Rain does not collect, store, or sell your personal information.
+      </div>
+      <p>
+        This Privacy Policy explains how <strong>ChAs Tech Group</strong> ("we", "our", "us")
+        handles information in connection with the mobile game
+        <strong>Emoji Rain: Focus or Fail</strong> ("the App"), available on Google Play.
+      </p>
+      <p>
+        By downloading or playing Emoji Rain, you agree to the terms described in this policy.
+        If you do not agree, please discontinue use of the App.
+      </p>
+    </div>
+
+    <!-- Information collected -->
+    <div class="section">
+      <h2><span class="num">02</span> Information We Collect</h2>
+      <div class="highlight">
+        We do not directly collect any personal data from users.
+      </div>
+      <p>The App stores the following data <strong>locally on your device only</strong>:</p>
+      <ul>
+        <li>Your high score and game progress</li>
+        <li>Sound preferences (on/off)</li>
+        <li>Remove Ads purchase status and expiry date</li>
+      </ul>
+      <p style="margin-top:14px;">
+        None of this data is transmitted to our servers. It lives entirely on your device
+        and is cleared if you uninstall the App.
+      </p>
+    </div>
+
+    <!-- Ads -->
+    <div class="section">
+      <h2><span class="num">03</span> Advertising (Google AdMob)</h2>
+      <p>
+        Emoji Rain is free to play and is supported by advertisements provided by
+        <strong>Google AdMob</strong>. AdMob may collect and use data to show you
+        relevant ads, including:
+      </p>
+      <ul>
+        <li>Advertising ID (resettable in your device settings)</li>
+        <li>Device type, OS version, and language</li>
+        <li>Approximate location (country/region level)</li>
+        <li>App usage and interaction data</li>
+        <li>IP address</li>
+      </ul>
+      <p style="margin-top:14px;">
+        This data is collected and processed by Google, not by ChAs Tech Group.
+        You can opt out of personalised ads at any time:
+      </p>
+      <ul>
+        <li>Android: Settings → Google → Ads → Opt out of Ads Personalisation</li>
+        <li>Or reset your Advertising ID in device settings</li>
+      </ul>
+      <p style="margin-top:14px;">
+        Purchasing <strong>Remove Ads</strong> removes all banner and interstitial ads.
+        Rewarded ads (used for gameplay features like continuing after game over) remain
+        available as optional, user-initiated interactions.
+      </p>
+    </div>
+
+    <!-- IAP -->
+    <div class="section">
+      <h2><span class="num">04</span> In-App Purchases</h2>
+      <p>
+        Emoji Rain offers optional time-limited <strong>Remove Ads</strong> purchases
+        ($0.99 / $2.99 / $8.99). All payment processing is handled exclusively by
+        <strong>Google Play</strong>. We never receive or store your payment card details.
+      </p>
+      <p>
+        Purchase records are managed by Google Play. To request a refund, contact
+        Google Play Support directly.
+      </p>
+    </div>
+
+    <!-- Third parties -->
+    <div class="section">
+      <h2><span class="num">05</span> Third-Party Services</h2>
+      <p>The App integrates the following third-party services, each with their own privacy policy:</p>
+      <table class="third-party">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Purpose</th>
+            <th>Privacy Policy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Google AdMob</strong></td>
+            <td>Advertising</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+          </tr>
+          <tr>
+            <td><strong>Google Play Billing</strong></td>
+            <td>In-app purchases</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+          </tr>
+          <tr>
+            <td><strong>Flutter / Dart</strong></td>
+            <td>App framework</td>
+            <td><a href="https://flutter.dev/privacy" target="_blank">flutter.dev/privacy</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Children -->
+    <div class="section">
+      <h2><span class="num">06</span> Children's Privacy (COPPA)</h2>
+      <div class="warning-box">
+        ⚠️ Emoji Rain is rated for users aged 13 and above due to advertising content.
+      </div>
+      <p>
+        We do not knowingly collect personal information from children under 13.
+        The App is not directed at children under 13. If you believe a child under 13
+        has used the App, please contact us and we will take appropriate action.
+      </p>
+      <p>
+        Parental guidance is recommended for users under 16, in accordance with
+        applicable regulations.
+      </p>
+    </div>
+
+    <!-- Data security -->
+    <div class="section">
+      <h2><span class="num">07</span> Data Security &amp; Retention</h2>
+      <p>
+        Since we do not collect personal data, there is no personal data stored on our
+        servers to secure. All game data stored locally on your device is protected by
+        your device's own security mechanisms.
+      </p>
+      <p>
+        Local game data (scores, preferences) is retained until you uninstall the App
+        or clear the App's data in your device settings.
+      </p>
+    </div>
+
+    <!-- User rights -->
+    <div class="section">
+      <h2><span class="num">08</span> Your Rights (GDPR &amp; Global)</h2>
+      <p>Depending on your location, you may have rights including:</p>
+      <ul>
+        <li>The right to access data held about you</li>
+        <li>The right to request deletion of your data</li>
+        <li>The right to opt out of personalised advertising</li>
+        <li>The right to data portability</li>
+      </ul>
+      <p style="margin-top:14px;">
+        For ad-related data rights, exercise these directly through Google's
+        <a href="https://myaccount.google.com/data-and-privacy" target="_blank"
+           style="color:#00E5FF;">Data &amp; Privacy dashboard</a>.
+        For any other requests, contact us below.
+      </p>
+    </div>
+
+    <!-- Changes -->
+    <div class="section">
+      <h2><span class="num">09</span> Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. When we do, we will update
+        the "Last updated" date at the top of this page. Continued use of the App after
+        any changes constitutes acceptance of the updated policy.
+      </p>
+      <p>
+        We encourage you to review this page periodically to stay informed about
+        how we protect your privacy.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-card">
+      <h3>📬 Contact Us</h3>
+      <p>
+        Questions about this Privacy Policy?<br/>
+        Reach out to ChAs Tech Group directly.
+      </p>
+      <a href="mailto:privacy@chastech.com">privacy@chastech.com</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2026 <span>ChAs Tech Group</span> · Emoji Rain: Focus or Fail</p>
+    <p style="margin-top:6px;">Package: <span>com.chastech.emojirain</span></p>
+  </div>
+
+</body>
+</html>
